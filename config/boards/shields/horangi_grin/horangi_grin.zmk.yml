@@ -1,0 +1,11 @@
+file_format: "1"
+id: horangi_grin
+name: horangi_grin
+type: shield
+url: https://github.com/zenithistk/horangi_grin
+requires: [seeed_xiao]
+features:
+  - keys
+siblings:
+  - horangi_grin_left
+  - horangi_grin_right
