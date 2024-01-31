@@ -92,9 +92,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&kp F &kp A &kp S &kp T>
+                = <&kp F>
                 , <&macro_wait_time 500>
-                , <&kp S &kp L &kp O &kp W>;
+                , <&kp S>
+                , <&macro_wait_time 500>
+                , <&kp T>;
         };
 
         tap_time_test2: tap_time_test2 {
