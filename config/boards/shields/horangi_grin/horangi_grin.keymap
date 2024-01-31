@@ -92,10 +92,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap_time 10>
-                , <&kp S &kp H &kp O &kp R &kp T>
-                , <&macro_tap_time 500>
-                , <&kp L &kp O &kp N &kp G>;
+                = <&kp F &kp A &kp S &kp T>
+                , <&macro_wait_time 500>
+                , <&kp S &kp L &kp O &kp W>;
         };
 
     };
