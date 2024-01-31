@@ -94,7 +94,6 @@
             bindings
                 = <&kp F>
                 , <&macro_wait_time 500>
-                , <&kp S>
                 , <&macro_wait_time 500>
                 , <&kp T>;
         };
