@@ -92,7 +92,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&none>
+                = <&kp F>
                 , <&macro_wait_time 500>
                 , <&kp F>
                 , <&kp S>
