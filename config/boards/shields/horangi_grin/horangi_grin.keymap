@@ -97,6 +97,28 @@
                 , <&kp S &kp L &kp O &kp W>;
         };
 
+        tap_time_test2: tap_time_test2 {
+            label = "tap_time_test2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap_time 10>
+                , <&kp S &kp H &kp O &kp R &kp T>
+                , <&macro_tap_time 500>
+                , <&kp L &kp O &kp N &kp G>;
+        };
+
+    };
+
+    behaviors {
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&tap_time_test>, <&tap_time_test2>;
+        };
     };
 
     keymap {
@@ -104,7 +126,7 @@
 
         default_layer {
             bindings = <
-         &tap_time_test &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6     &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12        &kp DEL
+         &as &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6     &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12        &kp DEL
 &kp HOME &kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5  &kp N6    &kp N7  &kp N8  &kp N9  &kp N0   &kp MINUS &kp EQUAL      &kp BSPC
 &kp END  &kp TAB &kp Q   &kp W   &kp E   &kp R   &kp T           &kp Y   &kp U   &kp I   &kp O   &kp P   &kp LBKT &kp RBKT   &kp BSLH
 &kp PG_UP &kp CAPS &kp A &kp S   &kp D   &kp F   &kp G            &kp H   &kp J   &kp K   &kp L   &kp SEMI  &kp SQT          &kp ENTER
