@@ -94,8 +94,9 @@
             bindings
                 = <&kp F>
                 , <&macro_wait_time 500>
-                , <&macro_wait_time 500>
-                , <&kp T>;
+                , <&kp S>
+                , <&kp T>
+                , <&kp A>;
         };
 
         tap_time_test2: tap_time_test2 {
